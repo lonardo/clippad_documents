@@ -1,54 +1,65 @@
-# Security Policy
+# Security Policy / 安全政策
 
-## Supported versions
+## Supported versions / 支持版本
 
-Security updates are provided for the latest published release on GitHub Releases.
-Older builds may not receive fixes.
+Security fixes target the latest signed GitHub Release. Older builds are best effort only and may not receive fixes.
 
-| Version | Supported |
+安全修复以最新签名 GitHub Release 为目标。旧版本仅尽力维护，不保证持续修复。
+
+| Version / 版本 | Support / 支持 |
 |---|---|
-| Latest release | Yes |
-| Older releases | Best effort only |
+| Latest signed Release / 最新签名版本 | Yes / 是 |
+| Older releases / 较旧版本 | Best effort / 尽力而为 |
+| Unofficial mirrors / 非官方镜像 | No / 不支持 |
 
-## Product security expectations
+## Product security expectations / 产品安全要求
 
-- Official installers should be code-signed.
-- Prefer downloading only from GitHub Releases or the official website.
-- Verify SHA256 checksums published in the release notes when provided.
-- Treat community mirrors as untrusted unless we explicitly list them.
+- Download installers only from the official GitHub Release or official website.
+- Verify the Authenticode signer and SHA256 from the matching Release.
+- Treat VBS as executable code: review source, Host permissions, input paths, output paths, and write behavior before running.
+- Prefer Host-first functions, preview, confirmation, backup, and rollback.
+- Keep Office, Windows, and endpoint protection updated.
 
-## Data handling summary
+- 只从官方 GitHub Release 或官网下载安装包。
+- 使用同一 Release 的数字签名和 SHA256 校验。
+- 把 VBS 当作可执行代码审查，运行前检查 Host 权限、输入路径、输出路径和写入行为。
+- 优先使用 Host-first 函数、预览、确认、备份和回滚。
+- 保持 Office、Windows 和终端防护软件更新。
 
-- Local Office automation stays on the device unless you explicitly run a
-  cloud/AI-assisted action or upload feedback.
-- Feedback packages may include logs, screenshots, or diagnostic data that you
-  choose to send.
-- Do not upload confidential documents, credentials, or customer data to public
-  GitHub issues.
+## Report privately / 私密报告
 
-See [docs/privacy.md](docs/privacy.md) for the public privacy summary.
+Report suspected vulnerabilities privately to:
 
-## Reporting a vulnerability
+安全漏洞请私密发送至：
 
-Please report security issues privately.
+~~~text
+security@clippad.cc
+~~~
 
-- Email: `security@clippad.cc`  
-  TODO: replace with your monitored security inbox
-- Include:
-  - product version
-  - Office and Windows versions
-  - impact assessment
-  - reproduction steps or proof-of-concept details
-  - whether the issue is already public
+If this address is unavailable, do not publish exploit details in a public Issue; contact the maintainers through the official website or GitHub private reporting capability.
 
-Please allow a reasonable time for assessment before public disclosure.
+如果该邮箱暂时不可用，不要在公开 Issue 中发布利用细节，请通过官网或 GitHub 私密报告能力联系维护者。
 
-## What not to report in public issues
+Include:
 
-- zero-day details that enable malware abuse
-- private customer documents
-- authentication tokens, private keys, or dump files with sensitive paths
+- affected Release or commit;
+- Windows and Office versions, including 32/64-bit;
+- impact and attack preconditions;
+- minimal reproduction or proof of concept;
+- whether the report contains customer or personal data.
 
-## Acknowledgments
+请提供受影响的 Release/提交、Windows 和 Office 版本及位数、影响和攻击前提、最小复现方式，以及报告是否含客户或个人数据。
 
-Responsible reporters may be credited in release notes if they want attribution.
+## Do not publish / 不要公开
+
+- private documents or customer data;
+- passwords, API keys, tokens, certificates, or private keys;
+- unredacted settings.ini, telemetry outboxes, logs, or dumps;
+- arbitrary file write/delete or Office document corruption details before triage;
+- unpublished signing, deployment, ICP, software-copyright, patent, or market-submission materials.
+
+## Disclosure / 披露
+
+Maintainers will assess impact, reproduce on a supported staging build, prepare a fix, and publish a coordinated advisory when appropriate. Do not assume that a public issue is a security report.
+
+维护者会评估影响，在支持的 staging 构建上复现并准备修复，必要时协同发布安全公告。公开 Issue 不等同于安全报告。
