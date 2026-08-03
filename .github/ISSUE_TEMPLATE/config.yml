@@ -2,7 +2,10 @@ blank_issues_enabled: false
 contact_links:
   - name: Product website
     url: https://clippad.cc
-    about: Product home, downloads, and public documentation.
+    about: Product home, downloads, and public documentation / 产品主页、下载和公开文档。
   - name: Email support
     url: mailto:support@clippad.cc
-    about: Private support for account or non-public issues.
+    about: Private support for account or non-public issues / 账号或非公开问题的私密支持。
+  - name: Community functions repository
+    url: https://github.com/lonardo/clippad_functions
+    about: VBS, Host API, prompts, schemas, and public function contributions / VBS、Host API、提示词、Schema 和公共函数贡献。

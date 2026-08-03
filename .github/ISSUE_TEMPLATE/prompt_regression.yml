@@ -1,0 +1,65 @@
+name: Prompt or Host grounding regression
+description: Report an invented Host method, unsafe VBS, or prompt-generation regression / 报告虚构 Host 方法、不安全 VBS 或提示词回归
+title: "[Prompt]: "
+labels: ["prompt", "community"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Redact documents, prompts containing secrets, account data, and private model endpoints.
+        请脱敏文档、包含秘密的提示词、账号数据和私有模型接口。
+  - type: input
+    id: prompt_version
+    attributes:
+      label: Prompt version / 提示词版本
+      placeholder: "community-v0.1.0"
+    validations:
+      required: true
+  - type: input
+    id: host_version
+    attributes:
+      label: Host API version / Host API 版本
+      placeholder: "host-api-v1"
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Model and provider / 模型与提供商
+      placeholder: "Release-specific; do not include API keys"
+    validations:
+      required: true
+  - type: textarea
+    id: input
+    attributes:
+      label: Minimal redacted input / 最小脱敏输入
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result / 期望结果
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result / 实际结果
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Smallest failing output / 最小失败输出
+      description: Include only the relevant code or error, with private values removed.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Confirmation / 确认
+      options:
+        - label: No secret or private document is included. / 未包含秘密或私有文档。
+          required: true
+        - label: I checked the output against host-api-v1.json. / 我已对照 host-api-v1.json 检查输出。
+          required: true

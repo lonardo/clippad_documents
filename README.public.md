@@ -4,7 +4,7 @@ OfficeAddin is a Windows desktop Office add-in for turning repeated Word, Excel,
 
 OfficeAddin 是面向 Windows 桌面版 Word、Excel 和 PowerPoint 的插件，用于把重复办公操作整理成可复用的命令、工作流和 Host-first VBS 函数。
 
-[Latest release / 最新版本](https://github.com/lonardo/clippad_documents/releases/latest) · [Install / 安装](docs/install.md) · [Usage / 使用](docs/usage.md) · [FAQ](docs/faq.md) · [Privacy / 隐私](docs/privacy.md) · [Security / 安全](SECURITY.md)
+[Latest release / 最新版本](https://github.com/lonardo/clippad_documents/releases/latest) · [Product / 产品](docs/product.md) · [Install / 安装](docs/install.md) · [Usage / 使用](docs/usage.md) · [VBS / Host](docs/vbs.md) · [AI VBS generation / AI 生成 VBS](docs/ai-vbs-generation.md) · [Open source / 开源](docs/open-source.md) · [FAQ](docs/faq.md) · [Privacy / 隐私](docs/privacy.md) · [Security / 安全](SECURITY.md)
 
 ## What it does / 产品定位
 

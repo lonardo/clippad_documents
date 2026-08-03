@@ -1,5 +1,5 @@
 name: Bug report
-description: Something does not work as expected after install
+    description: Something does not work as expected after install / 安装后出现可复现问题
 title: "[Bug]: "
 labels: ["bug"]
 body:
@@ -12,7 +12,7 @@ body:
     id: version
     attributes:
       label: Add-in version
-      placeholder: "1.0.0"
+      placeholder: "X.Y.Z.BUILD"
     validations:
       required: true
   - type: dropdown
@@ -31,14 +31,14 @@ body:
     id: office_version
     attributes:
       label: Office version
-      placeholder: "Microsoft 365, Office 2021, Office 2016, ..."
+      placeholder: "Office 2010 / 2013 / 2016 / 2019 / 2021 / Microsoft 365"
     validations:
       required: true
   - type: input
     id: windows
     attributes:
       label: Windows version
-      placeholder: "Windows 11 23H2"
+      placeholder: "Windows 10 or Windows 11, exact build"
     validations:
       required: true
   - type: dropdown
