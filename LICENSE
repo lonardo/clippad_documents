@@ -1,0 +1,60 @@
+Office AI Add-in Proprietary License
+
+Copyright (c) 2026 TODO: Legal owner / publisher name. All rights reserved.
+
+IMPORTANT: This repository may publish documentation, issue templates, checksums,
+and packaged installers. Publication of those materials does not grant rights to
+the product source code, trademarks, or unrestricted redistribution.
+
+1. License grant
+
+Subject to these terms, you may download the official installer published by the
+copyright holder and use the software for personal or internal business purposes
+in accordance with the product terms presented at installation or on the product
+website.
+
+2. Restrictions
+
+You may not, except to the extent permitted by applicable law:
+
+- copy, sell, sublicense, or redistribute the installer or software for public
+  download without prior written permission
+- reverse engineer, decompile, or modify the software except where mandatory law
+  allows interoperability investigation
+- remove proprietary notices, publisher identity, or security signatures
+- use the software to build a competing installer distribution channel that
+  packages our binaries as your own product
+
+3. Updates and online services
+
+Some features may require network access, account login, or third-party model
+services. Those features are provided under the product privacy notice and any
+separate service terms. The copyright holder may change online endpoints, update
+channels, or feature availability.
+
+4. No source code license
+
+No source code license is granted. Contributions to public issue trackers do not
+transfer ownership of your feedback text beyond the rights needed to evaluate and
+implement product improvements.
+
+5. Disclaimer of warranty
+
+THE SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO MERCHANTABILITY, FITNESS FOR A PARTICULAR
+PURPOSE, AND NON-INFRINGEMENT.
+
+6. Limitation of liability
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE COPYRIGHT HOLDER SHALL NOT BE LIABLE
+FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR BUSINESS LOSS ARISING
+FROM USE OF THE SOFTWARE, INCLUDING DOCUMENT CORRUPTION, DATA LOSS, OR FAILED
+AUTOMATION RESULTS. Always back up important files before batch operations.
+
+7. Contact
+
+Support: support@clippad.cc
+Security: security@clippad.cc
+Website: https://clippad.cc
+
+TODO: replace contact addresses and legal owner before public launch if needed.

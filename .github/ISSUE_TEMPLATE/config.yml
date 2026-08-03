@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Product website
+    url: https://clippad.cc
+    about: Product home, downloads, and public documentation.
+  - name: Email support
+    url: mailto:support@clippad.cc
+    about: Private support for account or non-public issues.

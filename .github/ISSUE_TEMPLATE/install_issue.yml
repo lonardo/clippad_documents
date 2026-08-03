@@ -1,0 +1,74 @@
+name: Install / ribbon missing
+description: Installer failed or Office AI toolbar does not appear
+title: "[Install]: "
+labels: ["install"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for setup problems, SmartScreen blocks, or a missing ribbon entry.
+  - type: input
+    id: version
+    attributes:
+      label: Installer / add-in version
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: office_version
+    attributes:
+      label: Office version
+      placeholder: "Microsoft 365 / Office 2021 / ..."
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: "Windows 11"
+    validations:
+      required: true
+  - type: dropdown
+    id: arch
+    attributes:
+      label: Office architecture
+      options:
+        - 64-bit
+        - 32-bit
+        - Not sure
+    validations:
+      required: true
+  - type: dropdown
+    id: symptom
+    attributes:
+      label: Symptom
+      options:
+        - Installer blocked by SmartScreen / antivirus
+        - Install finished but ribbon missing
+        - Add-in disabled by Office
+        - Crash during install
+        - Crash on Office startup
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: What you already tried
+      placeholder: "Closed Office apps / rebooted / checked COM Add-ins / reinstalled / ..."
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Exact error text or screenshot notes
+    validations:
+      required: true
+  - type: checkboxes
+    id: source
+    attributes:
+      label: Download source
+      options:
+        - label: GitHub Releases
+        - label: Official website
+        - label: Other / not sure

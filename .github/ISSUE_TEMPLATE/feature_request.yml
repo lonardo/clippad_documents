@@ -1,0 +1,53 @@
+name: Feature request
+description: Suggest a workflow or product improvement
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: dropdown
+    id: app
+    attributes:
+      label: Primary Office app
+      options:
+        - Word
+        - Excel
+        - PowerPoint
+        - Cross-app workflow
+        - Website / account / licensing
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem you are trying to solve
+      description: What repeated pain do you hit today?
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current manual workflow
+      description: How do you complete the task now?
+    validations:
+      required: true
+  - type: textarea
+    id: ideal
+    attributes:
+      label: Ideal one-click or guided result
+    validations:
+      required: true
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: How often does this happen?
+      options:
+        - Daily
+        - Weekly
+        - Monthly
+        - Only for special projects
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Extra context
+      description: Industry, team size, sample anonymized screenshots, or acceptance criteria.
