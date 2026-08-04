@@ -21,10 +21,10 @@ OfficeAddin is an independent Windows desktop COM add-in for turning repeated Wo
 
 ## Supported scope / 支持范围
 
-- Windows 10/11 desktop / Windows 10/11 桌面版
+- Windows XP and newer desktop / Windows XP 及以上桌面版
 - Word, Excel, PowerPoint / Word、Excel、PowerPoint
 - Office 2010 and newer have been tested / Office 2010 及以上已测试
-- No current public claim for Mac, browser-only Office, Windows 7, or Windows 8.1 / 当前不声明支持 Mac、纯 Web Office、Windows 7 或 8.1
+- No current public claim for Mac or browser-only Office / 当前不声明支持 Mac 或纯 Web Office
 
 ## Download / 下载
 

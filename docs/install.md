@@ -6,10 +6,10 @@ This guide describes the current OfficeAddin installer behavior derived from set
 
 ## Supported environment / 支持环境
 
-- Windows 10 or Windows 11 desktop / Windows 10 或 Windows 11 桌面版
+- Windows XP and newer desktop / Windows XP 及以上桌面版
 - Word, Excel, and/or PowerPoint / Word、Excel 和/或 PowerPoint
 - Office 2010 and newer have been tested / Office 2010 及以上已测试
-- The current public claim does not include Mac, browser-only Office, Windows 7, or Windows 8.1 / 当前不声明支持 Mac、纯 Web Office、Windows 7 或 Windows 8.1
+- The current public claim does not include Mac or browser-only Office / 当前不声明支持 Mac 或纯 Web Office
 
 The installer is per-user. Its default installation directory is:
 

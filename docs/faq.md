@@ -34,11 +34,11 @@ No public support claim is made for Mac or browser-only Office. The product inte
 
 当前不声明支持 Mac 或纯浏览器 Office；产品依赖 Windows 桌面版 Office。
 
-### Is Windows 7 or Windows 8.1 supported? / 支持 Windows 7 或 8.1 吗？
+### Is Windows XP or newer supported? / 支持 Windows XP 及以上吗？
 
-No. The current public Windows scope is Windows 10 and Windows 11.
+Yes. The current public Windows scope is Windows XP and newer desktop versions. Windows 7 has been verified.
 
-不支持。当前公开 Windows 范围为 Windows 10 和 Windows 11。
+支持。当前公开 Windows 范围为 Windows XP 及以上桌面版本，Windows 7 已验证通过。
 
 ### What hardware is required? / 最低硬件是什么？
 

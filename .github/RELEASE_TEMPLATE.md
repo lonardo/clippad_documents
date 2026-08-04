@@ -14,7 +14,7 @@
 
 ## Supported environment / 支持环境
 
-- Windows 10 / Windows 11 desktop
+- Windows XP and newer desktop
 - Office 2010 and newer, as tested for this Release
 - Word / Excel / PowerPoint:
 - Office architecture:

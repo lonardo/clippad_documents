@@ -42,11 +42,11 @@ OfficeAddin 把本地 Office 自动化能力放在 Office 功能区中，提供�
 
 ## Compatibility / 兼容性
 
-- Windows 10 or Windows 11 desktop / Windows 10 或 Windows 11 桌面版
+- Windows XP and newer desktop / Windows XP 及以上桌面版
 - Microsoft Word, Excel, and PowerPoint / Microsoft Word、Excel 和 PowerPoint
 - Office 2010 and newer have been tested / Office 2010 及以上版本已测试
 - 32-bit and 64-bit behavior must be reported with each issue / 提交问题时请说明 32 位或 64 位
-- Mac, browser-only Office, Windows 7, and Windows 8.1 are not part of the current public support claim / 当前不声明支持 Mac、纯 Web Office、Windows 7 或 Windows 8.1
+- Mac and browser-only Office are not part of the current public support claim / 当前不声明支持 Mac 或纯 Web Office
 
 No hardware minimum is published yet. We will publish measured resource data only with a reproducible release test matrix.
 

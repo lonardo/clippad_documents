@@ -8,10 +8,7 @@ This page records the current public support claim. A Release may narrow the cla
 
 | Platform / 平台 | Status / 状态 | Notes / 说明 |
 |---|---|---|
-| Windows 10 desktop | Supported public scope | Test the exact Release and Office build |
-| Windows 11 desktop | Supported public scope | Test the exact Release and Office build |
-| Windows 7 | Not claimed | Do not use old type-library compatibility as a support claim |
-| Windows 8/8.1 | Not claimed | No current public Release claim |
+| Windows XP and newer desktop | Supported public scope | Test the exact Release and Office build |
 | macOS | Not supported | COM add-in and Windows runtime boundary |
 | Office for the web | Not supported | Requires installed desktop Office |
 

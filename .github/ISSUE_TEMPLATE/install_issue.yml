@@ -25,7 +25,7 @@ body:
     id: windows
     attributes:
       label: Windows version
-      placeholder: "Windows 10 or Windows 11, exact build"
+      placeholder: "Windows XP or newer, exact build"
     validations:
       required: true
   - type: dropdown
