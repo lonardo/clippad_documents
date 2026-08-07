@@ -1,0 +1,74 @@
+name: Install / ribbon missing
+description: Installer failed or Office AI / AI助手 Ribbon does not appear / 安装失败或功能区不显示
+title: "[Install]: "
+labels: ["install"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for setup problems, SmartScreen blocks, or a missing ribbon entry.
+  - type: input
+    id: version
+    attributes:
+      label: Installer / add-in version
+      placeholder: "X.Y.Z.BUILD"
+    validations:
+      required: true
+  - type: input
+    id: office_version
+    attributes:
+      label: Office version
+      placeholder: "Office 2010 / 2013 / 2016 / 2019 / 2021 / Microsoft 365"
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: "Windows XP or newer, exact build"
+    validations:
+      required: true
+  - type: dropdown
+    id: arch
+    attributes:
+      label: Office architecture
+      options:
+        - 64-bit
+        - 32-bit
+        - Not sure
+    validations:
+      required: true
+  - type: dropdown
+    id: symptom
+    attributes:
+      label: Symptom
+      options:
+        - Installer blocked by SmartScreen / antivirus
+        - Install finished but ribbon missing
+        - Add-in disabled by Office
+        - Crash during install
+        - Crash on Office startup
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: What you already tried / 已尝试的步骤
+      placeholder: "Closed Office apps / rebooted / checked COM Add-ins / reinstalled / ..."
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Exact error text or screenshot notes
+    validations:
+      required: true
+  - type: checkboxes
+    id: source
+    attributes:
+      label: Download source
+      options:
+        - label: GitHub Releases
+        - label: Official website
+        - label: Other / not sure

@@ -1,60 +1,74 @@
-Office AI Add-in Proprietary License
+OfficeAddin Product and Installer License
 
-Copyright (c) 2026 TODO: Legal owner / publisher name. All rights reserved.
+Copyright (c) 2026 OfficeAddin. All rights reserved.
 
-IMPORTANT: This repository may publish documentation, issue templates, checksums,
-and packaged installers. Publication of those materials does not grant rights to
-the product source code, trademarks, or unrestricted redistribution.
+This license applies to the official OfficeAddin installer, product binaries,
+and product materials distributed in this repository or its GitHub Releases.
+It does not apply to the Apache-2.0 community functions repository:
 
-1. License grant
+https://github.com/lonardo/clippad_functions
 
-Subject to these terms, you may download the official installer published by the
-copyright holder and use the software for personal or internal business purposes
-in accordance with the product terms presented at installation or on the product
-website.
+## 1. License grant
 
-2. Restrictions
+Subject to these terms, you may download and use the official, unmodified
+OfficeAddin installer for personal or internal business purposes in accordance
+with the terms shown during installation and the applicable website terms.
 
-You may not, except to the extent permitted by applicable law:
+## 2. Restrictions
 
-- copy, sell, sublicense, or redistribute the installer or software for public
-  download without prior written permission
-- reverse engineer, decompile, or modify the software except where mandatory law
-  allows interoperability investigation
-- remove proprietary notices, publisher identity, or security signatures
-- use the software to build a competing installer distribution channel that
-  packages our binaries as your own product
+Except where applicable law requires otherwise, you may not:
 
-3. Updates and online services
+- redistribute the installer or product binaries through an unofficial public
+  download channel;
+- sell, sublicense, lease, or repackage the installer as your own product;
+- modify, patch, or remove notices from the installer or binaries;
+- remove or invalidate digital signatures;
+- reverse engineer, decompile, or disassemble the product, except to the
+  extent mandatory law permits for interoperability or security research;
+- use the OfficeAddin name, logo, or publisher identity to imply endorsement
+  of a modified build;
+- publish private server settings, credentials, signing materials, or
+  customer data obtained from the product.
 
-Some features may require network access, account login, or third-party model
-services. Those features are provided under the product privacy notice and any
-separate service terms. The copyright holder may change online endpoints, update
-channels, or feature availability.
+The Apache-2.0 license for community VBS, examples, prompts, schemas, and
+original public documentation does not grant rights to the installer, product
+DLLs, backend services, trademarks, or online-service credentials.
 
-4. No source code license
+## 3. Online services and updates
 
-No source code license is granted. Contributions to public issue trackers do not
-transfer ownership of your feedback text beyond the rights needed to evaluate and
-implement product improvements.
+AI, account, update, feedback, telemetry, VBS-market, and other online
+features may require network access and may be governed by separate terms and
+privacy notices. Endpoints, providers, retention, and feature availability
+may change by release.
 
-5. Disclaimer of warranty
+## 4. Contributions and feedback
 
-THE SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO MERCHANTABILITY, FITNESS FOR A PARTICULAR
-PURPOSE, AND NON-INFRINGEMENT.
+Public issues, discussions, and pull requests are for product feedback and
+community materials. Do not submit confidential documents, credentials,
+private keys, or restricted legal/filing materials.
 
-6. Limitation of liability
+Unless a separate written agreement says otherwise, feedback grants OfficeAddin
+the limited right to evaluate, reproduce, and improve the product. This does
+not transfer ownership of a contributor's unrelated original work.
 
-TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE COPYRIGHT HOLDER SHALL NOT BE LIABLE
-FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR BUSINESS LOSS ARISING
-FROM USE OF THE SOFTWARE, INCLUDING DOCUMENT CORRUPTION, DATA LOSS, OR FAILED
-AUTOMATION RESULTS. Always back up important files before batch operations.
+## 5. Disclaimer of warranty
 
-7. Contact
+THE SOFTWARE AND PRODUCT MATERIALS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF
+ANY KIND, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. Always back up important
+documents before batch operations or document-writing commands.
+
+## 6. Limitation of liability
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, OFFICEADDIN SHALL NOT BE LIABLE FOR
+INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR BUSINESS LOSSES ARISING FROM
+USE OF THE SOFTWARE, INCLUDING DOCUMENT CORRUPTION, DATA LOSS, FAILED
+AUTOMATION, OR SERVICE INTERRUPTION.
+
+## 7. Contact
 
 Support: support@clippad.cc
-Security: security@clippad.cc
-Website: https://clippad.cc
 
-TODO: replace contact addresses and legal owner before public launch if needed.
+Security: security@clippad.cc
+
+Website: https://clippad.cc
