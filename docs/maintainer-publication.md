@@ -13,7 +13,7 @@ The public documents repository contains product documentation and signed Releas
 
 ## Current source audit / 当前源文件审计
 
-The installer script currently defaults to 1.0.0.1004, while Plugin/OfficePluginAI.rc, VbsProxy/VbsProxy.rc, and VbsWorker/VbsWorker.rc currently contain 1.0.0.1005. This is a release blocker, not a public version claim.
+As of 2026-08-08, setup/OfficeAddin.iss still defaults to 1.0.0.1004, while Plugin/OfficePluginAI.rc, VbsProxy/VbsProxy.rc, VbsWorker/VbsWorker.rc, and scripts/build_installer.ps1 already reference 1.0.0.1006. This remains a formal product Release blocker, not a public version claim. Community pack scripts and product installer versions are separate artifacts.
 
 Before a formal product Release:
 
