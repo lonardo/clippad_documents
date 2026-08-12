@@ -8,7 +8,7 @@ https://github.com/lonardo/clippad_functions
 
 It contains:
 
-- 110 Host-first VBS presets by category;
+- 131 Host-first VBS presets by category;
 - Host API v1 JSON;
 - VBS examples and safe workflow JSON;
 - prompt system instructions and patterns;
