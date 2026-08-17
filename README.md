@@ -18,6 +18,7 @@ OfficeAddin is an independent Windows desktop COM add-in for turning repeated Wo
 - Privacy / 隐私: docs/privacy.md
 - Security / 安全: SECURITY.md
 - Support / 支持: SUPPORT.md
+- 1008 stabilization service update / 1008 稳定性与消息中心更新: docs/service-update-20260817.md
 
 ## Supported scope / 支持范围
 
