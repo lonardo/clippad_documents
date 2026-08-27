@@ -10,6 +10,14 @@ The product is designed for users who repeatedly clean, format, compare, summari
 
 产品主要服务于反复进行文档清理、排版、核对、摘要、导出和规范化的用户。
 
+See [Product Design / 产品设计](product-design.md) for the principles behind commands, insights, and the AI workbench.
+
+如需了解指令、洞察和 AI 工作台背后的设计原则，请阅读[产品设计](product-design.md)。
+
+For annotated screenshots and step-by-step entry points, see [UI Guide / 带图界面指引](ui-guide.md).
+
+如需查看带标注截图和分步入口说明，请阅读[界面指引](ui-guide.md)。
+
 ## Current feature surfaces / 当前功能面
 
 | Surface / 功能面 | Evidence in project / 项目依据 | User value / 用户价值 |

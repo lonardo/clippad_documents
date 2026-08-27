@@ -1,5 +1,13 @@
 # Usage Guide / 使用指南
 
+For guided, practical scenarios, see [Try OfficeAddin / 试用场景](try-it.md).
+
+如需按真实任务逐步体验，请阅读[OfficeAddin 试用场景](try-it.md)。
+
+For a visual map of the Ribbon, command editor, context menu, Excel AIGEN, insights, and settings, see [UI Guide / 带图界面指引](ui-guide.md).
+
+如需查看功能区、指令编辑器、上下文菜单、Excel AIGEN、洞察和设置的带图说明，请阅读[界面指引](ui-guide.md)。
+
 ## First use / 第一次使用
 
 1. Install the matching signed Release.

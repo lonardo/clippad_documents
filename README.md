@@ -9,7 +9,10 @@ OfficeAddin is an independent Windows desktop COM add-in for turning repeated Wo
 - Latest Release / 最新版本: https://github.com/lonardo/clippad_documents/releases/latest
 - Install / 安装: docs/install.md
 - Usage / 使用: docs/usage.md
+- UI guide / 带图界面指引: docs/ui-guide.md
 - Product / 产品介绍: docs/product.md
+- Product design / 产品设计: docs/product-design.md
+- Try it / 试用场景: docs/try-it.md
 - Compatibility / 兼容性: docs/compatibility.md
 - VBS and Host / VBS 与 Host: docs/vbs.md
 - AI VBS generation / AI 生成 VBS: docs/ai-vbs-generation.md
