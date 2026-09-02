@@ -8,7 +8,7 @@ For a visual map of the Ribbon, command editor, context menu, Excel AIGEN, insig
 
 如需查看功能区、指令编辑器、上下文菜单、Excel AIGEN、洞察和设置的带图说明，请阅读[界面指引](ui-guide.md)。
 
-## First use / 第一次使用
+## Latest release / 最新版本\n\nOfficeAddin 1.0.0.1011 is the current production release. It includes the Excel AI workbench selection/apply fix, complete keyboard routing for the workbench and global search window, persistent Excel global-search mode, and stability improvements for queued AI sessions and shutdown. See [the changelog / 更新日志](../CHANGELOG.md) for the full bilingual summary.\n\n## First use / 第一次使用
 
 1. Install the matching signed Release.
 2. Reopen Word, Excel, or PowerPoint.
