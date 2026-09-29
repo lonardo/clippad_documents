@@ -1,5 +1,7 @@
 # Product Overview / 产品介绍
 
+Updated / 更新日期: 2026-09-29. Current public client / 当前公开客户端: 1.0.0.1013.
+
 ## What OfficeAddin is / OfficeAddin 是什么
 
 OfficeAddin is a Windows desktop COM add-in that integrates with Word, Excel, and PowerPoint. It places command editing, reusable workflows, a script library, intelligent suggestions, and preview-oriented actions inside the Office Ribbon.

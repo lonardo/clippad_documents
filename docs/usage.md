@@ -55,6 +55,28 @@ For a write command, a successful-looking UI message is not enough. Confirm the 
 - Do not copy business content from a sample presentation when only formatting migration is requested.
 - Treat master, theme, placeholder, animation, and hidden-slide operations as higher-risk actions.
 
+## Ribbon entries / 功能区入口
+
+After install, reopen Office and open the Office AI / AI助手 tab. Typical entries:
+
+安装后重新打开 Office，进入 Office AI / AI助手功能区。常见入口：
+
+- **Search / 搜索:** find an existing command and preview or run it without opening the workbench.
+- **Command Factory / 指令工厂:** describe a repeatable task, generate Host-first VBS, preview, then save it to the command library.
+- **Toolbar / 工具栏:** one-click run of pinned commands on the same preview/execute path.
+- **AI workbench / AI 工作台:** describe a bounded task with the current document/selection context, preview, apply, and roll back. Saving a successful path as a reusable command is the intended follow-through.
+- **Smart suggestions / 智能建议:** conservative prompts after repeated behavior in the same document. They are optional and can be ignored. Production builds may keep this surface off by default.
+
+- **搜索：** 找到已有指令后直接预演或执行，不必打开工作台。
+- **指令工厂：** 描述可重复任务，生成 Host-first VBS，预演后保存到指令库。
+- **工具栏：** 已钉指令走同一条预演/执行链。
+- **AI 工作台：** 带当前文档/选区描述有边界的任务，预演、应用、撤销。成功路径应能沉淀为可复用指令。
+- **智能建议：** 同一文档内重复行为后才提示，可忽略；生产包可能默认关闭。
+
+The public VBS contract is Host-first. Generate scripts against the Host API JSON in lonardo/clippad_functions; do not guess COM methods.
+
+公共 VBS 以 Host 为唯一入口。生成脚本时先读 lonardo/clippad_functions 中的 Host API JSON，不要猜测 COM 方法。
+
 ## Command editor and script library / 指令工厂与脚本库
 
 The command editor is for turning a repeatable manual process into a named command. A good command has one clear goal, explicit inputs, bounded output, a failure result, and a safe write policy.

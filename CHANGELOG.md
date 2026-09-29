@@ -1,29 +1,117 @@
-﻿# OfficeAddin 1.0.0.1012 / 发布说明
+# Changelog / 更新日志
 
-## 重点更新
-- Excel 跨表核对候选现在会在上下文稳定且证据充分时显示，确认动作继续严格校验当前工作簿、工作表和选区。
-- Excel 启动阶段不再因无工作簿的 UIA provider 阻塞关闭流程，降低启动页卡死风险。
-- 洞察提示改为同一文档内重复行为达到阈值后再显示，减少一次性操作造成的打扰。
-- Word 格式洞察遵守用户设置，并在重复格式行为达到阈值后提示。
+All public product changes must be copied from the matching signed Release. This file must not contain a version or date that has not actually been published.
 
-## 安装与校验
-- 安装包：OfficeAddinSetup.exe
-- SHA256：5d6bfb7c143f60ed28cddbf3edd2e3b5e31053d755e19a3a2e30fd2754bad0af
-- MD5：8bc9933268d4600c3621677ecaeb37f9
-- 签名：Authenticode Valid（Ningbo Wang）
-- 支持：Windows 桌面版；Office 2010 及以上；Word / Excel / PowerPoint；具体兼容性以本版本实测为准。
+所有公开产品变更必须从对应的签名 Release 同步。本文件不得填写尚未真实发布的版本号或日期。
 
-## 已知边界
-- 建议卡片只在上下文和重复行为满足条件时出现；单次格式操作不会触发可见提示。
-- 重要写入操作仍需用户确认。
+## Unreleased / 未发布
 
-本版本不上传内部归档 ZIP、PDB 或私有诊断资料。
+Documentation updates that are not tied to a new installer may land here until the next signed Release.
 
-## English
-- Excel cross-sheet reconciliation suggestions now appear only with stable context and sufficient evidence; confirmation still validates workbook, sheet, and selection context.
-- Excel startup avoids UIA tracking when no workbook exists, reducing close-time hangs on the start page.
-- Insights require repeated behavior within the same document before showing a visible prompt.
-- Word format insights respect user settings and use the same repeated-behavior threshold.
+未绑定新安装包的文档更新可先记在这里，直到下一个签名 Release。
 
-Installer SHA256: 5d6bfb7c143f60ed28cddbf3edd2e3b5e31053d755e19a3a2e30fd2754bad0af
-Authenticode: Valid (Ningbo Wang)
+## [1.0.0.1013] - 2026-09-29
+
+### Added / 新增
+
+- None.
+
+### Changed / 变更
+
+- Opening an insight in the AI workbench carries the observed selection and operation into the task.
+- Excel cross-sheet confirmation uses one frameless prompt.
+
+### Fixed / 修复
+
+- Workbench typing in Word and Excel keeps Chinese input, paste, shortcuts, and returned focus in the workbench.
+- Preview confirmation stays above the preview.
+- Reopening the workbench restores the locally saved preview and task note when that record exists.
+- A blank workbench page attempts to recover instead of staying empty.
+
+### Security / 安全
+
+- None.
+
+### Compatibility / 兼容性
+
+- Windows: desktop Windows with Office 2010 or later, including Microsoft 365 desktop.
+- Office: Word, Excel, PowerPoint.
+- 32/64-bit: both, matching the installed Office bitness.
+
+### Assets / 发布资产
+
+- OfficeAddinSetup.exe
+- SHA256: f5715ae301e03305036d8fca1a5f026b262f74481c06e179e621a5171529165a
+- Signature: Valid (Ningbo Wang)
+
+Public GitHub Release: https://github.com/lonardo/clippad_documents/releases/tag/1.0.0.1013
+
+## [1.0.0.1012] - 2026-09-16
+
+### Added / 新增
+
+- None. This build tightens existing insight, Excel candidate, and startup/close behavior.
+
+### Changed / 变更
+
+- Visible insight prompts require repeated independent behavior in the same document.
+- Excel cross-sheet reconciliation cards appear only when workbook, sheet, and selection context is stable.
+- Excel avoids UIA tracking before a workbook is opened.
+
+### Fixed / 修复
+
+- Word/Excel insight trigger boundaries and Excel start-page close interaction with UIA.
+- Suggestion card layout and action affordances.
+
+### Security / 安全
+
+- None.
+
+### Compatibility / 兼容性
+
+- Windows: desktop Windows with Office 2010 or later, including Microsoft 365 desktop.
+- Office: Word, Excel, PowerPoint.
+- 32/64-bit: both, matching the installed Office bitness.
+
+### Assets / 发布资产
+
+- OfficeAddinSetup.exe
+- SHA256: 5d6bfb7c143f60ed28cddbf3edd2e3b5e31053d755e19a3a2e30fd2754bad0af
+- Signature: Valid (Ningbo Wang)
+
+Public GitHub Release: https://github.com/lonardo/clippad_documents/releases/tag/1.0.0.1012
+
+## Release entry template / 版本条目模板
+
+When a real Release is published, add an entry in this format:
+
+~~~text
+## [X.Y.Z.BUILD] - YYYY-MM-DD
+
+### Added / 新增
+- User-visible change.
+
+### Changed / 变更
+- User-visible behavior or compatibility change.
+
+### Fixed / 修复
+- Reproducible issue fixed.
+
+### Security / 安全
+- Security-relevant change or "None".
+
+### Compatibility / 兼容性
+- Windows:
+- Office:
+- Word / Excel / PowerPoint:
+- 32/64-bit:
+
+### Assets / 发布资产
+- OfficeAddinSetup.exe
+- SHA256:
+- Signature:
+~~~
+
+Do not copy internal implementation plans, customer incidents, private backend details, or legal filing materials into the public changelog.
+
+不要把内部实施计划、客户事件、私有后端细节或申报资料写入公开更新日志。
