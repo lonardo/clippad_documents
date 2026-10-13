@@ -66,9 +66,9 @@ For example, a user who knows the command they need should be able to use search
 
 ## 帮助是可选的，不应成为绕路
 
-Connections between commands, insights, and the workbench are intended to reduce repeated explanation. They are not intended to interrupt work, force a page change, or decide a workflow on the user's behalf.
+Connections between commands, insights, and the workbench are intended to reduce repeated explanation. They are not intended to interrupt work, force a page change, or decide a workflow on the user's behalf. When an insight recommends a saved command, the product still previews or asks for confirmation before it writes.
 
-指令、洞察和工作台之间的关联，是为了减少重复描述，不是为了打断工作、强制跳转页面，或替用户决定工作流程。
+指令、洞察和工作台之间的关联，是为了减少重复描述，不是为了打断工作、强制跳转页面，或替用户决定工作流程。洞察推荐一条已保存指令时，仍然先预演或确认，再写入。
 
 The product should offer a next step only when it is useful and understandable. The user can always continue with the current task, use a direct command, or decline a suggestion.
 

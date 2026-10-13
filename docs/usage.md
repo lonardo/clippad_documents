@@ -65,13 +65,13 @@ After install, reopen Office and open the Office AI / AI助手 tab. Typical entr
 - **Command Factory / 指令工厂:** describe a repeatable task, generate Host-first VBS, preview, then save it to the command library.
 - **Toolbar / 工具栏:** one-click run of pinned commands on the same preview/execute path.
 - **AI workbench / AI 工作台:** describe a bounded task with the current document/selection context, preview, apply, and roll back. Saving a successful path as a reusable command is the intended follow-through.
-- **Smart suggestions / 智能建议:** conservative prompts after repeated behavior in the same document. They are optional and can be ignored. Production builds may keep this surface off by default.
+- **Smart suggestions / 智能建议:** optional prompts after a repeated published scene. A saved command can be recommended only when its header fits the current app and a confirmed `@insightBinding` matches that scene. Accepting it still previews or asks before writing. Production builds may keep this surface off by default.
 
 - **搜索：** 找到已有指令后直接预演或执行，不必打开工作台。
 - **指令工厂：** 描述可重复任务，生成 Host-first VBS，预演后保存到指令库。
 - **工具栏：** 已钉指令走同一条预演/执行链。
 - **AI 工作台：** 带当前文档/选区描述有边界的任务，预演、应用、撤销。成功路径应能沉淀为可复用指令。
-- **智能建议：** 同一文档内重复行为后才提示，可忽略；生产包可能默认关闭。
+- **智能建议：** 重复出现已发布场景后才提示，可忽略。已保存指令只有在头部适合当前应用、并且已确认的 `@insightBinding` 对上该场景时才会被推荐。接受后仍先预演或确认，再写入。生产包可能默认关闭。
 
 The public VBS contract is Host-first. Generate scripts against the Host API JSON in lonardo/clippad_functions; do not guess COM methods.
 

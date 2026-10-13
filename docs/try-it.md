@@ -4,9 +4,9 @@ These small scenarios help you try OfficeAddin with real Office work. They are d
 
 这些小场景帮助您用真实的 Office 工作体验 OfficeAddin。它们体现了产品的核心思路：从明确任务开始，先查看影响范围，并始终保留对重要改动的控制权。
 
-Feature names and availability can vary by release and Office application. Use the commands and entry points available in your installed version. The current public client is 1.0.0.1013 (2026-09-29).
+Feature names and availability can vary by release and Office application. Use the commands and entry points available in your installed version. The current public client is 1.0.0.1014 (2026-10-13).
 
-功能名称和可用范围可能因版本和 Office 应用而不同。请使用您安装版本中实际可见的指令和入口。当前公开客户端为 1.0.0.1013（2026-09-29）。
+功能名称和可用范围可能因版本和 Office 应用而不同。请使用您安装版本中实际可见的指令和入口。当前公开客户端为 1.0.0.1014（2026-10-13）。
 
 ## Before you start / 开始前
 
@@ -105,12 +105,14 @@ Insights are optional help, not a required step. If your version shows an insigh
 1. Read what the insight believes is relevant and why.
 2. Decide whether the suggested next step fits the task you are actually doing.
 3. Ignore it and continue your work, or act on it locally if it is useful.
-4. Start a direct command or the AI workbench independently; you should not need the insight to do so.
+4. If the card names a saved command, open the preview or confirmation before any write. A recommendation does not run the script by itself.
+5. Start a direct command or the AI workbench independently; you should not need the insight to do so.
 
 1. 阅读洞察认为相关的内容以及原因。
 2. 判断建议的下一步是否符合您真正正在做的工作。
 3. 如果没有帮助，可以忽略它并继续工作；如果有帮助，可以在当前场景处理。
-4. 独立启动直接指令或 AI 工作台；您不应必须依赖洞察才能完成任务。
+4. 如果卡片点名一条已保存指令，写入前先打开预演或确认。推荐不会自己运行脚本。
+5. 独立启动直接指令或 AI 工作台；您不应必须依赖洞察才能完成任务。
 
 No insight appearing is also a valid result. The product should prefer silence over an irrelevant interruption.
 

@@ -1,8 +1,8 @@
 # OfficeAddin
 
-OfficeAddin 是面向 Windows 桌面版 Word、Excel 和 PowerPoint 的独立 COM 插件。核心是用大模型把重复操作写成可预演、可保存的 Host-first VBS 指令，再从功能区搜索、工具栏、指令工厂或 AI 工作台跑起来。产品仍在维护，当前公开客户端为 1.0.0.1013（2026-09-29）。
+OfficeAddin 是面向 Windows 桌面版 Word、Excel 和 PowerPoint 的独立 COM 插件。核心是用大模型把重复操作写成可预演、可保存的 Host-first VBS 指令，再从功能区搜索、工具栏、指令工厂或 AI 工作台跑起来。产品仍在维护，当前公开客户端为 1.0.0.1014（2026-10-13）。
 
-OfficeAddin is an independent Windows desktop COM add-in for Word, Excel, and PowerPoint. The core loop is: generate Host-first VBS commands with an LLM, preview them, save them, and run them from Ribbon search, the toolbar, Command Factory, or the AI workbench. The product is actively maintained. The current public client is 1.0.0.1013 (2026-09-29).
+OfficeAddin is an independent Windows desktop COM add-in for Word, Excel, and PowerPoint. The core loop is: generate Host-first VBS commands with an LLM, preview them, save them, and run them from Ribbon search, the toolbar, Command Factory, or the AI workbench. The product is actively maintained. The current public client is 1.0.0.1014 (2026-10-13).
 
 ## Quick links / 快速入口
 
@@ -21,7 +21,7 @@ OfficeAddin is an independent Windows desktop COM add-in for Word, Excel, and Po
 - Privacy / 隐私: docs/privacy.md
 - Security / 安全: SECURITY.md
 - Support / 支持: SUPPORT.md
-- Current public client / 当前公开客户端: 1.0.0.1013 (2026-09-29)
+- Current public client / 当前公开客户端: 1.0.0.1014 (2026-10-13)
 - 1008 service update (historical) / 1008 服务更新（历史）: docs/service-update-20260817.md
 
 ## Supported scope / 支持范围

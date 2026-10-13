@@ -1,6 +1,6 @@
 # Product Overview / 产品介绍
 
-Updated / 更新日期: 2026-09-29. Current public client / 当前公开客户端: 1.0.0.1013.
+Updated / 更新日期: 2026-10-13. Current public client / 当前公开客户端: 1.0.0.1014.
 
 ## What OfficeAddin is / OfficeAddin 是什么
 
@@ -30,6 +30,7 @@ For annotated screenshots and step-by-step entry points, see [UI Guide / 带图�
 | AI工作台 / Assistant workbench | Installer and UI surfaces | Preview, apply, and rollback assistant actions |
 | Workflow Host | Host dispatcher, orchestration, and Host API | Execute bounded local plans and VBS functions |
 | Preview and rollback | Preview actions, write plans, history manager | Review changes before writing documents |
+| Insight command binding | Confirmed `@insightBinding` in a trusted VBS header | Recommend a saved command after a repeated published scene, then preview or confirm |
 | Feedback and diagnostics | VbsProxy telemetry/feedback paths | Submit selected diagnostics for support |
 
 Feature availability can vary by Release, Office application, user settings, and account/network state. Release notes are authoritative for a specific build.

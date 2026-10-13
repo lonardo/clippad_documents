@@ -8,7 +8,7 @@ This guide describes the public, reproducible way to ask an AI model to generate
 
 Provide the model with:
 
-1. the current Host API JSON;
+1. the current Host API JSON and the call recipes in host-api.md;
 2. the public system prompt;
 3. the target Office application;
 4. the current document and selection state;
@@ -16,7 +16,9 @@ Provide the model with:
 6. one reviewed VBS example from the same category;
 7. acceptance cases and a failure example.
 
-生成时必须提供：Host API JSON、公共系统提示词、目标 Office 应用、当前文档/选区状态、输入输出及风险要求、同类已审查 VBS 示例、验收案例和失败案例。
+生成时必须提供：Host API JSON、host-api.md 里的调用配方、公共系统提示词、目标 Office 应用、当前文档/选区状态、输入输出及风险要求、同类已审查 VBS 示例、验收案例和失败案例。
+
+已注册的 ExcelGetHeaderMap、ExcelReadTable、ExcelCreateOutputSheet、ExcelDedupePlan、ExcelValidatePlan 必须出现在给模型的合同里。只给方法名、不给参数和返回形状，模型会当成没有这个能力。Host.ExcelListSheetCatalog、Host.ExcelInsertNamedChart、Host.ExcelCreateQueryDraft 尚未注册，生成脚本不得调用它们；表名目录和命名图表的当前可达写法在 host-api.md。
 
 Public sources:
 
@@ -52,7 +54,10 @@ Every generated public function should:
 - check app, document, selection, saved state, and output path;
 - preview and confirm before writes;
 - provide backup or rollback behavior;
-- avoid CreateObject, GetObject, WScript.Shell, Shell.Application, ADODB.Stream, FileSystemObject, InputBox, MsgBox, registry, shell, and hidden Office process creation.
+- avoid CreateObject, GetObject, WScript.Shell, Shell.Application, ADODB.Stream, FileSystemObject, InputBox, MsgBox, registry, shell, and hidden Office process creation;
+- set `搜索范围` to `无`, `选区`, `当前范围`, `全文`, or `指定范围`, and `搜索对象` to `无`, `文本`, `公式`, or `图表`;
+- use `全文` and `无` when the fit is unclear;
+- do not write `@insightBinding` or invent a `triggerId`, and do not set `confirmMode` to `auto`. `@insightProposal` is a review comment. The host writes `@insightBinding` only after the user confirms.
 
 每个公共生成函数都应满足以上要求，不能仅因为代码“能运行”就跳过预览、确认和恢复设计。
 

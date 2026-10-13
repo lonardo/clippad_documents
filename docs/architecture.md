@@ -35,6 +35,12 @@ The script registry, trust checks, dispatcher, and rollback rules remain product
 
 脚本注册器、信任校验、调度器和回滚规则属于产品实现。公共贡献者应面向 Host 契约，不依赖私有类名或内部 C++ 路径。
 
+## Insight recommendation / 洞察推荐
+
+A repeated published scene may recommend a saved VBS when the script header contains a confirmed `@insightBinding`. `@insightProposal` is only a review comment. Matching does not add a Host method, and it does not write until preview or an explicit confirm. The author rules are in [VBS](vbs.md).
+
+短时间重复的已发布场景可以推荐一条头部带有已确认 `@insightBinding` 的 VBS。`@insightProposal` 只是待审注释。匹配不新增 Host 方法，也不在预演或明确确认前写入。作者规则见 [VBS](vbs.md)。
+
 ## Read, preview, write / 读取、预览、写入
 
 Read operations collect context or produce a report. Preview operations calculate impact without committing. Write operations change a document or local output and require an explicit policy.

@@ -22,9 +22,9 @@ Recommended flow / 推荐流程：
 
 ## 2. Smart Suggestions and behavior graph / 智能建议与行为图谱
 
-Smart Suggestions are optional assistance. The insight window summarizes the current behavior archive, recent operation patterns, time-range filters, and related paths. The user can inspect the behavior graph, accept a suggestion, add requirements, postpone it, or mark it as unsuitable. A suggestion is not an unattended write operation; important document changes still require review and confirmation.
+Smart Suggestions are optional assistance. The insight window summarizes the current behavior archive, recent operation patterns, time-range filters, and related paths. When a repeated published scene matches a saved command, the card can recommend that VBS. The match uses the confirmed `@insightBinding` line in the script header. The user can inspect the behavior graph, accept a suggestion, add requirements, postpone it, or mark it as unsuitable. Accepting a recommendation opens a preview or an explicit confirm. It is not an unattended write.
 
-智能建议是可选帮助。洞察窗口会展示当前行为档案、近期操作模式、时间范围和关联路径。用户可以查看行为图谱、接受建议、补充要求、稍后处理或标记为不合适。智能建议不等于无人值守写入，重要文档修改仍需复核和确认。
+智能建议是可选帮助。洞察窗口会展示当前行为档案、近期操作模式、时间范围和关联路径。重复出现的已发布场景如果对上已保存指令，卡片可以推荐那条 VBS。匹配使用脚本头部里已确认的 `@insightBinding`。用户可以查看行为图谱、接受建议、补充要求、稍后处理或标记为不合适。接受推荐会打开预演或明确确认，不是无人值守写入。
 
 ![Annotated Smart Suggestions and behavior graph](assets/insights-behavior-graph-annotations.png)
 

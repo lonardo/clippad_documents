@@ -23,6 +23,12 @@ The installer script sets PrivilegesRequired=lowest. Do not ask users to run it 
 
 安装脚本设置了 PrivilegesRequired=lowest。除非企业策略或具体错误诊断明确要求，否则不要让用户以管理员身份运行。
 
+## Choosing a build on the website / 在官网选择版本
+
+The public install page can offer two current choices: a recommended stable build, whose fourth version number is even, and the latest trial, whose fourth version number is odd. Earlier packages stay in a collapsed list. This guide still describes how one downloaded installer runs. Use the Release notes for the build you actually download.
+
+官网安装页可以同时给出两个当前选择：推荐的稳定版，第四段版本号为偶数；最新试用版，第四段版本号为奇数。更早的包收在折叠列表里。本文仍说明单个已下载安装包如何运行。实际下载的那一版，以该 Release 说明为准。
+
 ## Before installing / 安装前
 
 1. Save important documents and close Word, Excel, and PowerPoint.

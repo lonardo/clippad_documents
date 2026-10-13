@@ -72,6 +72,12 @@ Local Office operations can work without an AI request or online account. AI, ac
 
 未触发 AI 或在线服务时，本地 Office 操作可以离线运行；AI、账号、更新、反馈、遥测和在线内容功能可能需要网络。
 
+## Why was my script not recommended? / 为什么我的脚本没有被洞察推荐？
+
+An insight recommends a saved command only after a published scene repeats in the current app, the script header fits that app, and the script contains a confirmed `@insightBinding` for that scene. `@insightProposal` is only a review comment. An unknown trigger id, `confirmMode` of `auto`, an invalid declaration, or a scene that is guidance-only will not produce a recommendation. No recommendation is a valid result.
+
+洞察只有在当前应用重复出现已发布场景、脚本头部适合该应用、并且脚本里有对上该场景的已确认 `@insightBinding` 时，才会推荐已保存指令。`@insightProposal` 只是待审注释。未知触发编号、`confirmMode` 为 `auto`、无效声明，或仅作提示的场景，都不会产生推荐。没有推荐也是正常结果。
+
 ## VBS and Host / VBS 与 Host
 
 ### Where are public functions? / 公共函数在哪里？
