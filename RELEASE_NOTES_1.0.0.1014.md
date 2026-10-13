@@ -38,6 +38,11 @@
 
 本版本不上传内部归档 ZIP、PDB 或私有诊断资料。
 
+## 文档
+- 产品说明：https://github.com/lonardo/clippad_documents
+- Host 调用配方：https://github.com/lonardo/clippad_functions/blob/main/docs/host-api.md
+- 任务边界：https://github.com/lonardo/clippad_functions/blob/main/prompts/vbs-prompt-patterns.md
+
 ## English
 
 1.0.0.1014 is a stability release. Install and upgrade behavior is unchanged.
@@ -67,3 +72,8 @@
 
 Installer SHA256: 2eaf84bd93ab651df2300d14b9fb1379e2fbce4b4509987ce1d46f9eb573d6b3
 Authenticode: Valid (Ningbo Wang)
+
+Documentation:
+- Product notes: https://github.com/lonardo/clippad_documents
+- Host recipes: https://github.com/lonardo/clippad_functions/blob/main/docs/host-api.md
+- Task boundaries: https://github.com/lonardo/clippad_functions/blob/main/prompts/vbs-prompt-patterns.md

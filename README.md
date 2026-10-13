@@ -45,6 +45,9 @@ Public VBS, Host API, prompts, schemas, workflow examples, and contribution tool
 
 https://github.com/lonardo/clippad_functions
 
+- Host recipes / Host 调用配方: https://github.com/lonardo/clippad_functions/blob/main/docs/host-api.md
+- Task boundaries / 任务边界: https://github.com/lonardo/clippad_functions/blob/main/prompts/vbs-prompt-patterns.md
+
 The community repository uses Apache-2.0 for its VBS, examples, prompts, schemas, and original public documentation. The OfficeAddin installer and product binaries remain proprietary.
 
 公共仓库中的 VBS、示例、提示词、Schema 和原创文档采用 Apache-2.0；OfficeAddin 安装包和产品二进制仍按专有产品许可管理。

@@ -23,7 +23,9 @@ Provide the model with:
 Public sources:
 
 ~~~text
+https://github.com/lonardo/clippad_functions/blob/main/docs/host-api.md
 https://github.com/lonardo/clippad_functions/blob/main/prompts/vbs-system-prompt.md
+https://github.com/lonardo/clippad_functions/blob/main/prompts/vbs-prompt-patterns.md
 https://raw.githubusercontent.com/lonardo/clippad_functions/main/host/host-api-v1.json
 ~~~
 

@@ -55,6 +55,19 @@ Documentation updates that are not tied to a new installer may land here until t
 - Extended the Excel Host methods shown while writing scripts. Only implemented methods are shown.
 - 拓展写脚本时可见的 Excel Host 方法，只展示已经实现的方法。
 
+### Assets / 发布资产
+
+- OfficeAddinSetup.exe
+- SHA256: 2eaf84bd93ab651df2300d14b9fb1379e2fbce4b4509987ce1d46f9eb573d6b3
+- Signature: Valid (Ningbo Wang)
+
+Public GitHub Release: https://github.com/lonardo/clippad_documents/releases/tag/1.0.0.1014
+
+Documentation / 文档:
+
+- Product notes: https://github.com/lonardo/clippad_documents
+- Host recipes: https://github.com/lonardo/clippad_functions/blob/main/docs/host-api.md
+- Task boundaries: https://github.com/lonardo/clippad_functions/blob/main/prompts/vbs-prompt-patterns.md
 
 ## [1.0.0.1013] - 2026-09-29
 
