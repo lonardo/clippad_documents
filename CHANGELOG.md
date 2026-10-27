@@ -10,82 +10,69 @@ Documentation updates that are not tied to a new installer may land here until t
 
 未绑定新安装包的文档更新可先记在这里，直到下一个签名 Release。
 
+- A confirmed insight declaration is the `@insightBinding` header line in the VBS. `@insightProposal` stays a review comment. Binding index files live in the sibling `Insight Bindings` folder, outside `VBA Script`. `auto` confirmation is rejected. Preview or an explicit confirm still comes before writing.
+- Documented the closed `搜索范围` and `搜索对象` values used by command search and insight matching.
+- Noted that the public install page can offer a stable even build and a latest trial. The signed installer behavior is unchanged.
 
-## [1.0.0.1014] - 2026-10-13
+- 已确认的洞察声明是 VBS 头部的 `@insightBinding`。`@insightProposal` 仍只是待审注释。绑定索引放在 `VBA Script` 同级的 `Insight Bindings` 目录。`auto` 确认会被拒绝。写入前仍要预演或明确确认。
+- 补上命令搜索和洞察匹配使用的封闭 `搜索范围`、`搜索对象` 取值。
+- 说明公开安装页可以提供稳定偶数版和最新试用版。已签名安装包的安装行为没有改变。
 
-### Fixed / 修复
+## [1.0.0.1015] - 2026-10-27
 
-- Fixed the problem where clicking the font checkbox opened the global search dropdown.
-- 修复点击字体复选框弹出全局搜索下拉窗口的问题。
-- Fixed confirmed Excel insight recommendations not appearing after repeated edits.
-- 修复 Excel 重复编辑后，已确认的洞察推荐不出现的问题。
-- Fixed bound Excel recommendations failing to appear when they have no text box.
-- 修复 Excel 已绑定推荐因为没有输入框而弹不出来的问题。
-- Fixed bound commands going silent when the generic corner-recommendation switch is turned off. Dismissing one command does not mute the others.
-- 修复关闭“主动弹出右下角推荐”后，已绑定指令也不再提醒的问题，关掉一条不会把其他指令一起静音。
-- Fixed confirmed bindings being skipped when the match was not strong enough. Repeat count and cooldown still apply.
-- 修复已确认的洞察绑定因为匹配不够而不出推荐的问题，重复次数和冷却仍然有效。
-- Fixed recommendations that kept appearing after a binding was removed. Search and the toolbar can still run the command.
-- 修复删除洞察绑定后仍然继续推荐的问题，搜索和工具栏仍可手动运行。
-- Fixed Word, Excel, or PowerPoint hanging on close, and no longer quitting PowerPoint that is still in use.
-- 修复关闭 Word、Excel 或 PowerPoint 时卡住的问题，也不会误退出正在使用的 PowerPoint。
-- Fixed PowerPoint showing insight recommendations.
-- 修复 PowerPoint 误显示洞察推荐的问题。
-- Fixed preview of an existing workbench command doing nothing. Repeated clicks are combined into one preview.
-- 修复工作台里已有指令点预演没有反应的问题，重复点击会合并成一次。
-- Fixed a failed insight refinement being written into the script body.
-- 修复细化洞察建议失败后，异常文字被写进脚本正文的问题。
-- Fixed binding review and recommendation buttons that were missing English.
-- 修复绑定审阅和推荐按钮缺少英文的问题。
-- Fixed isolated Excel preview changing the workbook's original format.
-- 修复 Excel 隔离预演改变工作簿原格式的问题。
+Public GitHub Release: https://github.com/lonardo/clippad_documents/releases/tag/1.0.0.1015
 
-### Improved / 优化
+- Fixed clicking a Ribbon search result closing the popup and stopping further typing.
+- Fixed Ribbon search results covering the search box.
+- Fixed global search and the Ribbon search box opening together.
+- Fixed a Word workbench dropdown closing by itself when clicked.
+- Fixed a pinned workbench growing wider on every refresh.
+- Fixed Smart Suggestions saying the engine was not initialized.
+- Added workbench follow-up history, Markdown answers, and text that appears while it is still generating.
+- Improved the workbench so it can shrink, a long title is truncated, and the send button stays on screen.
+- Improved the command list so a second open does not reread unchanged scripts.
+- Improved settings so reopening the page no longer forces a cache bypass.
 
-- Improved the first click of a preview-first command: it opens only the local plan, and the document changes after confirm. Cancel or failure does not run the script.
-- 优化先预演指令的第一次点击：只打开本地计划，确认后才改文档，取消或失败不会运行脚本。
+- 修复点击功能区搜索结果时弹层马上收回、后面无法继续输入的问题。
+- 修复功能区搜索结果挡住搜索框的问题。
+- 修复全局搜索和功能区搜索框同时打开的问题。
+- 修复 Word 工作台里点开下拉列表时，列表自己关掉的问题。
+- 修复钉住工作台宽度后，刷新把窗口越撑越宽的问题。
+- 修复点击智能建议时提示引擎尚未初始化的问题。
+- 新增工作台对话会记住后续上下文，回答可以按 Markdown 显示，并在生成过程中逐步出现。
+- 优化工作台窗口可以收到更窄，标题过长时会省略，发送按钮仍留在屏幕上。
+- 优化再次打开指令列表时，未改动的脚本不再逐个重读。
+- 优化再次打开设置页时不再强制跳过缓存。
 
-### Added / 新增
+### Compatibility / 兼容性
 
-- Added local insight binding for Word and Excel. A confirmed declaration is written in the script header, and the index sits beside the script folder. The model cannot write a confirmed binding. Unconfirmed suggestions stay in review. Automatic confirmation is rejected.
-- 新增 Word 和 Excel 的本地洞察绑定，确认后写在脚本头部，索引放在脚本目录旁边。模型不能自行写入已确认绑定，未确认建议只留在审阅里，自动确认会被拒绝。
-
-### Extended / 拓展
-
-- Extended the Excel Host methods shown while writing scripts. Only implemented methods are shown.
-- 拓展写脚本时可见的 Excel Host 方法，只展示已经实现的方法。
+- Windows: desktop Windows with Office 2010 or later, including Microsoft 365 desktop.
+- Office: Word, Excel, PowerPoint.
+- 32/64-bit: both, matching the installed Office bitness.
 
 ### Assets / 发布资产
 
 - OfficeAddinSetup.exe
-- SHA256: 2eaf84bd93ab651df2300d14b9fb1379e2fbce4b4509987ce1d46f9eb573d6b3
+- SHA256: 215949ce6639fdae3bcf0c0809763c0bb9cd2b1f84be9286c263742f8192c838
 - Signature: Valid (Ningbo Wang)
-
-Public GitHub Release: https://github.com/lonardo/clippad_documents/releases/tag/1.0.0.1014
-
-Documentation / 文档:
-
-- Product notes: https://github.com/lonardo/clippad_documents
-- Host recipes: https://github.com/lonardo/clippad_functions/blob/main/docs/host-api.md
-- Task boundaries: https://github.com/lonardo/clippad_functions/blob/main/prompts/vbs-prompt-patterns.md
 
 ## [1.0.0.1013] - 2026-09-29
 
-### Added / 新增
+- Fixed workbench typing in Word and Excel losing Chinese input, paste, shortcuts, and characters after returning from the document.
+- Fixed preview confirmation being covered by the preview.
+- Fixed a workbench page that sometimes stayed blank.
+- Improved reopening the workbench so it restores the locally saved preview and task note.
+- Improved Excel cross-sheet confirmation to one frameless prompt.
+- Extended opening an insight in the workbench so it carries the observed selection and operation.
+- Added a settings check for whether the insight window can open.
 
-- None.
-
-### Changed / 变更
-
-- Opening an insight in the AI workbench carries the observed selection and operation into the task.
-- Excel cross-sheet confirmation uses one frameless prompt.
-
-### Fixed / 修复
-
-- Workbench typing in Word and Excel keeps Chinese input, paste, shortcuts, and returned focus in the workbench.
-- Preview confirmation stays above the preview.
-- Reopening the workbench restores the locally saved preview and task note when that record exists.
-- A blank workbench page attempts to recover instead of staying empty.
+- 修复 Word 和 Excel 工作台输入时中文、粘贴、快捷键丢失，以及从正文回到工作台后字符不在工作台的问题。
+- 修复预览确认被预览挡住的问题。
+- 修复工作台偶发打开成空白页的问题。
+- 优化重新打开工作台时恢复本机保存的预览和任务说明。
+- 优化 Excel 跨表核对改为一张无边框确认。
+- 拓展从洞察窗口展开到工作台时带上刚才的选区和操作。
+- 新增设置里可以检查洞察窗口是否能弹出。
 
 ### Security / 安全
 
@@ -100,7 +87,7 @@ Documentation / 文档:
 ### Assets / 发布资产
 
 - OfficeAddinSetup.exe
-- SHA256: published with the signed Release
+- SHA256: f5715ae301e03305036d8fca1a5f026b262f74481c06e179e621a5171529165a
 - Signature: Valid (Ningbo Wang)
 
 Public GitHub Release: https://github.com/lonardo/clippad_documents/releases/tag/1.0.0.1013

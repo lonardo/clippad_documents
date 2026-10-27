@@ -4,9 +4,9 @@ These small scenarios help you try OfficeAddin with real Office work. They are d
 
 这些小场景帮助您用真实的 Office 工作体验 OfficeAddin。它们体现了产品的核心思路：从明确任务开始，先查看影响范围，并始终保留对重要改动的控制权。
 
-Feature names and availability can vary by release and Office application. Use the commands and entry points available in your installed version. The current public client is 1.0.0.1014 (2026-10-13).
+Feature names and availability can vary by release and Office application. Use the commands and entry points available in your installed version. The current public client is 1.0.0.1015 (2026-10-27).
 
-功能名称和可用范围可能因版本和 Office 应用而不同。请使用您安装版本中实际可见的指令和入口。当前公开客户端为 1.0.0.1014（2026-10-13）。
+功能名称和可用范围可能因版本和 Office 应用而不同。请使用您安装版本中实际可见的指令和入口。当前公开客户端为 1.0.0.1015（2026-10-27）。
 
 ## Before you start / 开始前
 

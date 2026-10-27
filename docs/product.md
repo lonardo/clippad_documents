@@ -1,6 +1,6 @@
 # Product Overview / 产品介绍
 
-Updated / 更新日期: 2026-10-13. Current public client / 当前公开客户端: 1.0.0.1014.
+Updated / 更新日期: 2026-10-27. Current public client / 当前公开客户端: 1.0.0.1015.
 
 ## What OfficeAddin is / OfficeAddin 是什么
 
@@ -27,7 +27,7 @@ For annotated screenshots and step-by-step entry points, see [UI Guide / 带图�
 | AI助手 / Office AI Ribbon | word.xml, excel.xml, ppt.xml, installer messages | Start commands, suggestions, search, settings, feedback |
 | 指令工厂 / Command editor | Ribbon callbacks and command editor UI | Turn repeated steps into reusable commands |
 | 工具箱 / Toolbar and script library | ScriptRegistry and command catalog | Keep trusted commands one click away |
-| AI工作台 / Assistant workbench | Installer and UI surfaces | Preview, apply, and rollback assistant actions |
+| AI工作台 / Assistant workbench | Installer and UI surfaces | Preview, apply, and rollback assistant actions. Conversation mode keeps follow-up history and can render Markdown. |
 | Workflow Host | Host dispatcher, orchestration, and Host API | Execute bounded local plans and VBS functions |
 | Preview and rollback | Preview actions, write plans, history manager | Review changes before writing documents |
 | Insight command binding | Confirmed `@insightBinding` in a trusted VBS header | Recommend a saved command after a repeated published scene, then preview or confirm |
